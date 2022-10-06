@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Live Basketball</title>
+    <link rel="stylesheet" href="https://www.live.flexyscore.net/dirette/temp/css/completestyles/DarkSide.css">
+    
+</head>
+
+<body>
+    <section id="boxes">
+
+        <div class="container containerbasket">
+            <div class="sgrlogo"></div>
+            <div class="box boxtimer" id="timer">10:00</div>
+            <div class="box boxteams boxhometeam" id="team_1">team_1</div>
+            <div class="box boxpoints boxhomepoints" id="points_1">0</div>
+            <div class="box space">-</div>
+            <div class="box boxpoints boxawaypoints" id="points_2">0</div>
+            <div class="box boxteams boxawayteam" id="team_2">team_2</div>
+            <div class="box boxmoment boxovertimeoff" id="ovt"><span><em id="overtime">Q</em><strong id="moment">1</strong></span></div>
+			
+			<!-- versione americana (classe secondliners) | visibile [secondliners] nascosta [secondlinersoff] -->
+            <div class="box secondliners boxtimeouts boxhometimeouts" id="timeouts_1">0</div>
+            <div class="box secondliners boxtimeouts boxawaytimeouts" id="timeouts_2">0</div>
+            <!-- boxbonusoff, boxbonuson -->
+            <div class="box secondliners boxbonus boxhomebonus boxbonusoff" id="bonus_1">MAN UP</div>
+            <div class="box secondliners boxbonus boxawaybonus boxbonusoff" id="bonus_2">MAN UP</div>
+			<!-- fine versione americana -->
+			
+			<!-- versione europea / visibile [secondlinersEU] nascosta [secondlinersEUoff] -->
+			<div class="box secondlinersEU boxfoulsEU boxhomefoulsEU" id="foulcontainereuhome">
+				<div class="EUfouls EUfoulshome secondlinersEUoff" id="f1euhome"></div>
+				<div class="EUfouls EUfoulshome secondlinersEUoff" id="f2euhome"></div>
+				<div class="EUfouls EUfoulshome secondlinersEUoff" id="f3euhome"></div>
+				<div class="EUfouls EUfoulshome secondlinersEUoff" id="f4euhome"></div>
+				<div class="EUfouls EUfoulshome secondlinersEUoff" id="f5euhome"></div>
+			</div>
+			
+			<div class="box secondlinersEU boxfoulsEU boxawayfoulsEU" id="foulcontainereuaway">
+				<div class="EUfouls EUfoulsaway secondlinersEUoff" id="f1euaway"></div>
+				<div class="EUfouls EUfoulsaway secondlinersEUoff" id="f2euaway"></div>
+				<div class="EUfouls EUfoulsaway secondlinersEUoff" id="f3euaway"></div>
+				<div class="EUfouls EUfoulsaway secondlinersEUoff" id="f4euaway"></div>
+				<div class="EUfouls EUfoulsaway secondlinersEUoff" id="f5euaway"></div>
+			</div>
+			
+      </div>
+
+    </section>
+
+    <script type="text/javascript" src="https://www.live.flexyscore.net/dirette/temp/js/ajax/generalfeatures.js"></script>
+    <script type="text/javascript" src="https://www.live.flexyscore.net/dirette/temp/js/ajax/livebasketajax.js"></script>
+    <script>setLogo('633afca0adb68.png');</script>
+	<script>loadBasketRequest(6616);</script>
+
+</body>
+
+</html>
